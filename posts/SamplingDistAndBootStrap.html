@@ -6,7 +6,15 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
-<style type="text/css">
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="css/landing-page.css" rel="stylesheet">
+
+<!-- Custom Fonts -->
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     /*!
 *
 * Twitter Bootstrap
@@ -130,14 +138,14 @@ div#notebook {
   div.cell {
     display: block;
     page-break-inside: avoid;
-  } 
-  div.output_wrapper { 
-    display: block;
-    page-break-inside: avoid; 
   }
-  div.output { 
+  div.output_wrapper {
     display: block;
-    page-break-inside: avoid; 
+    page-break-inside: avoid;
+  }
+  div.output {
+    display: block;
+    page-break-inside: avoid;
   }
 }
 </style>
@@ -954,7 +962,7 @@ EEAAAQQQQGCGEPg/y2WAGwCHfooAAAAASUVORK5CYII="
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span>hist<span class="p">(</span>mean_values<span class="p">,</span> breaks <span class="o">=</span> <span class="m">30</span><span class="p">,</span> prob <span class="o">=</span> <span class="kc">TRUE</span><span class="p">,</span> 
+<div class=" highlight hl-r"><pre><span></span>hist<span class="p">(</span>mean_values<span class="p">,</span> breaks <span class="o">=</span> <span class="m">30</span><span class="p">,</span> prob <span class="o">=</span> <span class="kc">TRUE</span><span class="p">,</span>
      main <span class="o">=</span> <span class="s">&quot;Histogram of Bootstrap Sample Means (sample size 32)&quot;</span><span class="p">,</span>
      xlab <span class="o">=</span> <span class="s">&quot;Sample Mean of Horsepower (n = 32)&quot;</span><span class="p">)</span>
 </pre></div>
@@ -1854,7 +1862,7 @@ AQUU6F/g/wOjFxrTCgwnKwAAAABJRU5ErkJggg=="
 <div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span>my.hist <span class="o">=</span> hist<span class="p">(</span>corr_vals<span class="p">,</span> breaks <span class="o">=</span> <span class="m">20</span><span class="p">,</span> 
+<div class=" highlight hl-r"><pre><span></span>my.hist <span class="o">=</span> hist<span class="p">(</span>corr_vals<span class="p">,</span> breaks <span class="o">=</span> <span class="m">20</span><span class="p">,</span>
           main <span class="o">=</span> <span class="s">&quot;Histogram of Bootstrap Sample Correlation Coefficients&quot;</span><span class="p">,</span>
           xlab <span class="o">=</span> <span class="s">&quot;Correlation Coefficient Values&quot;</span><span class="p">);</span>
 </pre></div>
